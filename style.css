@@ -1,0 +1,15 @@
+table {
+  border: 3px solid black;
+  background-color: rgb(125, 160, 197);
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: left;
+}
+
+h1 {
+  color: rgb(178, 157, 40);
+}
