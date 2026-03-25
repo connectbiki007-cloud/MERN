@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 table {
   border: 3px solid black;
   background-color: rgb(125, 160, 197);
@@ -12,4 +16,82 @@ td {
 
 h1 {
   color: rgb(178, 157, 40);
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline wavy;
+  word-spacing: 12px;
+  letter-spacing: 10px;
+  text-transform: uppercase; /* capitalize, uppercase, lowercase */
+  text-shadow: 4px 5px 15px darkblue;
+}
+/* Text Model */
+.lorem {
+  text-align: justify; /*right, left, center, justify*/
+  text-transform: capitalize;
+  word-spacing: 12px;
+  line-height: 1.25;
+}
+/* Font Model */
+.font_info {
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Montserrat";
+}
+/* Box Model */
+.box {
+  /* margin: 2px; */
+  /* margin-top: 6px;
+  margin-top: 3px; */
+  /* margin-left: 3px;
+  margin-right: 4px; */
+  margin-inline: 10px; /* margin-left and margin-right*/
+  margin-block: 9px; /*margin-top & margin-botton*/
+  /* padding: 3px; */
+  padding-top: 30px;
+  padding-botton: 10px;
+  padding-left: 10px;
+  padding-right: 1px;
+  border: 5px dashed red;
+  border-top: 3px solid green;
+  border-radius: 30px; /*border -corner*/
+}
+
+/* Display Property */
+h1 {
+  display: block; /* inline, block, inline-block, none, flex, grid*/
+}
+
+.card {
+  height: 100px;
+  weight: 20px;
+  background-color: lightgray;
+  border: 2px solid black;
+  font-size: 2rem;
+}
+.card2 {
+  height: 200px;
+  weight: 400px;
+  border: 2px solid black;
+}
+.box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  justify-content: space-between;
+  gap: 10px; /*row-gap, column-gap*/
+}
+
+ul {
+  margin: 40px;
+  list-style: circle; /* disk, circle, square, none */
+}
+nav ul {
+  display: flex;
+  margin: 2rem;
+  list-style: none;
+  gap: 10px;
 }
