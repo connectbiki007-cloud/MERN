@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        height: 100vh;
+      }
+      .container {
+        height: 400px;
+        width: 200px;
+        background-color: aquamarine;
+        overflow: auto;
+      }
+      .box {
+        width: 200px;
+        height: 400px;
+        background-color: brown;
+        position: relative;
+        top: 50px;
+        left: 40px;
+      }
+      .box1 {
+        height: 150px;
+        width: 100px;
+        background-color: rgb(131, 81, 81);
+        position: absolute; /*nearest parent relative, or root body*/
+        top: 10px;
+        left: 20px;
+        z-index: 10;
+      }
+      .box2 {
+        height: 150px;
+        width: 100px;
+        background-color: lightblue;
+        position: fixed; /*always fixed */
+        top: 10px;
+        right: 20px;
+      }
+      .box3 {
+        height: 150px;
+        width: 100px;
+        background-color: lightcoral;
+        position: sticky; /*always fixed */
+        top: 100px;
+        right: 30px;
+      }
+    </style>
+    <title>Overflow Property</title>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi alias et
+        facilis fugiat laboriosam mollitia assumenda exercitationem? Ipsam
+        officia iure sit ut. Rerum fugiat doloremque voluptatum nemo, ratione
+        dolorum commodi natus nisi qui tempore tempora fugit facilis saepe quod
+        ullam ex provident itaque maiores autem sed accusantium suscipit neque
+        est! Maxime saepe quia deserunt iusto inventore dolor cupiditate nostrum
+        dolorum voluptatibus reiciendis, et minima quaerat voluptate ratione
+        exercitationem dignissimos voluptas molestiae possimus totam? Odio
+        consectetur ducimus beatae distinctio a rerum nemo? Asperiores
+        voluptatem hic fugiat iste facilis corrupti fugit quidem, obcaecati fuga
+        labore debitis suscipit officiis dolorum culpa sit maiores.
+      </p>
+    </div>
+    <div class="box">Box</div>
+    <div class="box1">Box1</div>
+    <div class="box2">Box2</div>
+    <div class="box3">Box3</div>
+  </body>
+</html>

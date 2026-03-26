@@ -13,6 +13,9 @@ td {
   padding: 3px;
   text-align: left;
 }
+td:nth-child(2) {
+  background-color: lightgray;
+}
 
 h1 {
   color: rgb(178, 157, 40);
