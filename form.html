@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Page</title>
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
     <h1>Profile Form</h1>
@@ -30,27 +31,37 @@
       />
       <br />
       <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" required />
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email"
+        required
+      />
       <br />
       <label for="phone">Phone number</label>
       <input type="tel" name="phone" id="phone" value="+9779876540" disabled />
       <br />
       <!-- Checkbox: Multi-select -->
       <label>Hobbies</label>
-      <input type="checkbox" name="hobbies" checked /> Swimming
-      <input type="checkbox" name="hobbies" /> Gaming
-      <input type="checkbox" name="hobbies" checked /> Driving
-      <input type="checkbox" name="hobbies" /> Traveling
-      <input type="checkbox" name="hobbies" /> Movies
-      <input type="checkbox" name="hobbies" /> Music
+      <div class="hobbie">
+        <input type="checkbox" name="hobbies" checked /> Swimming
+        <input type="checkbox" name="hobbies" /> Gaming
+        <input type="checkbox" name="hobbies" checked /> Driving
+        <input type="checkbox" name="hobbies" /> Traveling
+        <input type="checkbox" name="hobbies" /> Movies
+        <input type="checkbox" name="hobbies" /> Music
+      </div>
 
       <br />
 
       <!-- Radio: Single select -->
       <label for="">Gender</label>
-      <input type="radio" name="gender" checked />Male
-      <input type="radio" name="gender" />Female
-      <input type="radio" name="gender" />Other
+      <div class="gender">
+        <input type="radio" name="gender" checked />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Other
+      </div>
       <br />
 
       <label for="docs">File</label>
